@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Age Calculadora</title>
+</head>
+<body>
+<div class="calculadora"> 
+    <h1 class="titulo">Age calculator</h1>
+    <div class="container">
+   <div class="box">
+   <div class="selectes"> <p> Year</p><select class="selecionar " id="ano"></select></div>
+   <div class="selectes"> <p>day</p>  <select class="selecionar" id="dia"></select></div> 
+   <div class="selectes"> <p>Month</p><select class="selecionar" id="mes">
+        <option value="janeiro">January</option>
+        <option value="fevereiro">February</option>
+        <option value="marco">March</option>
+        <option value="abril">April</option>
+        <option value="maio">May</option>
+        <option value="junho">June</option>
+        <option value="julho">July</option>
+        <option value="agosto">August</option>
+        <option value="setembro">September</option>
+        <option value="outubro">October</option>
+        <option value="novembro">November</option>
+        <option value="dezembro">December</option>
+       
+       </select>
+    </div>
+   
+  
+    <button id="botao"><i class="fa-solid fa-arrow-down"></i></button>
+ 
+    </div>
+    <div class="flex-response">
+   
+    <div  id="res_dia"></div>
+    <div  id="res_mes"></div>
+    <div  id="res_ano"></div>
+    <div  id="erro"></div>
+   </div>
+
+</div>
+</div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

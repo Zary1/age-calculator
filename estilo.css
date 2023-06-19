@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,500;1,100;1,400&display=swap');
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    
+    }
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.calculadora{
+    position: relative;
+    margin-top: 30px;
+    width: 900px;
+    height: 80vh;
+    background-color: rgb(215, 217, 217);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,0.4);
+}
+.calculadora .titulo{
+    font-size: 3rem;
+    font-weight: 900;
+   
+}
+.container{
+    margin: 40px auto;
+    height: 55vh;
+    width: 600px;
+    background-color: white;
+    border-radius: 0 2rem 6rem .5rem;
+    
+}
+.container .box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.container .box p{
+ margin-top:-140px;
+margin-left: -70px;
+padding-top: 200px;
+text-transform: uppercase;
+font-size: 20px;
+color: black;
+font-family:'Fira+Sans',sans-serif ; 
+position: absolute;
+
+
+}
+.selectes {
+    margin-left: 90px;
+    margin-top: -20px;
+
+}
+select option{
+    background-color: wheat;
+}
+
+.container .box .selecionar{
+   font-size: 20px;
+   margin-left: -80px;
+    margin-top: 90px;
+    text-align: left;
+    width: 150px;
+    height: 50px;
+}
+.container .box::before{
+    content: "";
+    margin-top: 150px;
+    position: absolute;
+    transform: translateX(60px);
+    border:  1px solid wheat;
+    width: 75%;
+    margin-left: -160px;
+    
+    
+    
+  
+
+}
+.container .box button{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 380px;
+    width: 70px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    border:none;
+
+    
+}
+.container .box button:active{
+    transform: scale(0.98);
+  
+}
+.container .box button i{
+    font-size: 20px;
+    color: wheat;
+}
+.container .flex-response{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+    
+}
+#res_dia,#res_mes .res {
+    color: black;
+    font-size: 30px;
+    font-family:'Fira+Sans',sans-serif ;
+    margin-top: -10px;
+    
+       
+}
+ .res span {
+    color: olive;
+     font-size: 30px;
+     font-family:'Fira+Sans',sans-serif ;
+     
+}
+#res_mes.a,  .res span{
+    transform: translateX(-150px);
+    transition: transform .6s ease;
+
+}
+ #res_dia.a, .res span{
+    transform: translateX(-150px);
+    transition: transform .6s ease;
+
+}
+#erro.a, .res{
+    transform: translateX(-20px);
+    transition: transform .5s ease;
+
+}
+
+
+.erro{
+    color: red;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+.sucesso{
+    color: green;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media(max-width:992px){
+    html{
+      font-size: 50%;
+  }
+  
+}
+@media(max-width:768px){
+  
+    html{
+      font-size: 50%;
+    
+     
+  
+  }
+ 
+  button{
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 140px;
+    
+
+    
+}
+
+}
+@media (max-width:450px) {
+    html{
+        font-size: 30%;
+     
+    }
+    .calculadora .titulo{
+        font-size: 5rem;
+    }
+    .container {
+
+        width: 370px;
+      
+    }
+    .container .box .selecionar{
+        width: 110px;
+      
+    }
+    .container .box #botao{
+        
+        margin-top: 130px;
+        margin-left:250px;
+        
+    
+        
+    }
+     .res{
+        transform: translateX(50px);
+        transition: transform .5s ease;
+    
+    }
+    .container .box .selecionar {
+        margin-top: 95px;
+        
+     
+        
+    }
+    .sucesso{
+        font-size: 6rem;
+    }
+    .erro{
+        font-size: 6rem;
+    }
+ 
+}
